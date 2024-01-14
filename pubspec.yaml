@@ -1,0 +1,46 @@
+name: metroca
+description: "App para escambo"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0-16.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.3
+  intl: ^0.18.1
+  http: ^0.13.3
+  flutter_svg: ^2.0.5
+  shared_preferences: ^2.0.18
+  cupertino_icons: ^1.0.2
+  image_picker: ^0.8.7
+  path_provider: ^2.0.14
+  path: ^1.8.3
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  permission_handler: ^11.1.0
+  infinite_scroll_pagination: ^4.0.0
+  flutter_image_slideshow: ^0.1.6
+  google_fonts: ^4.0.4
+  flutter_chat_bubble: ^2.0.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
+    - family: Anton
+      fonts:
+        - asset: assets/fonts/Anton-Regular.ttf
