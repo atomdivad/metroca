@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:metroca/models/categoria.dart';
 
@@ -39,7 +41,7 @@ class _ConfigCategoriasState extends State<ConfigCategorias> {
         return DropdownMenuItem<Categoria>(
           value: categoria,
           child: Text(
-            categoria.nome,
+            utf8.decode(categoria.nome.codeUnits),
             style: const TextStyle(color: Colors.black),
           ),
         );

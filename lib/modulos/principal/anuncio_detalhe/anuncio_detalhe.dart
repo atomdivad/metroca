@@ -117,7 +117,7 @@ class _AnuncioDetalheState extends State<AnuncioDetalhe> {
                         ),
                         const SizedBox(height: 15),
                         Text(
-                          anuncio.descricao,
+                          anuncio.interesses,
                           style: GoogleFonts.poppins(
                             fontSize: 15,
                             color: Colors.grey,

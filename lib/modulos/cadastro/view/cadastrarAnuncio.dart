@@ -252,7 +252,7 @@ class _cadastrarAnuncioState extends State<cadastrarAnuncio> {
                         return DropdownMenuItem<Categoria>(
                           value: categoria,
                           child: Text(
-                            categoria.nome,
+                            utf8.decode(categoria.nome.codeUnits),
                             style: const TextStyle(color: Colors.black),
                           ),
                         );

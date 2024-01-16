@@ -77,7 +77,7 @@ class _AnunciosFavoritosState extends State<AnunciosFavoritos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarPersonalizado('MeTroca'),
+      appBar: AppBarPersonalizado('Favoritos'),
       body: mostraBranco
           ? Text('')
           : PagedListView<int, Anuncio>(

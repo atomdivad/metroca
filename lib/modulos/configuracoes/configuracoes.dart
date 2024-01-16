@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:metroca/componentes/app_drawer.dart';
 import 'package:metroca/data/store.dart';
@@ -181,7 +183,7 @@ class _ConfiguracoesState extends State<Configuracoes> {
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                categoria.nome,
+                                utf8.decode(categoria.nome.codeUnits),
                                 style: const TextStyle(
                                     color: Colors.black, fontSize: 20),
                               ),
