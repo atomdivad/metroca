@@ -37,6 +37,16 @@ class AppDrawer extends StatelessWidget {
         ),
         const Divider(),
         ListTile(
+          leading: const Icon(Icons.new_label_outlined),
+          title: Text('Anunciar'),
+          onTap: () {
+            Navigator.of(context).pushReplacementNamed(
+              AppRoutes.cadastrarAnuncio,
+            );
+          },
+        ),
+        const Divider(),
+        ListTile(
           leading: const Icon(Icons.my_library_books),
           title: const Text('Meus Anúncios'),
           onTap: () {
