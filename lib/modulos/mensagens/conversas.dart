@@ -88,7 +88,7 @@ class _ConversasState extends State<Conversas> {
   Widget build(BuildContext context) {
     // print(_pagingController);
     return Scaffold(
-      appBar: AppBarPersonalizado('Mensagens'),
+      appBar: AppBarPersonalizado('Conversas'),
       body: mostraBranco
           ? Text('')
           : PagedListView<int, Conversa>(
